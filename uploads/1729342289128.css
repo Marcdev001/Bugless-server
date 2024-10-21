@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    word-wrap: break-word;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(243, 192, 126);
+    color: white;
+    
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.1rem;
+    margin-left: 6px;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+  }
+  .nav-links a:hover {
+    background-color: rgb(245, 216, 178);
+    color: rgb(243, 192, 126);
+    border-radius: 10px;
+  }
+  .mobile-icon {
+    display: none; /* Initially hide on larger screens */
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Hide on larger screens */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: rgb(243, 192, 126);
+      text-align: center;
+    }
+    .nav-links a:hover {
+      background-color: rgb(245, 216, 178);
+      color: rgb(243, 192, 126);
+      border-radius: 10px;
+    }
+    .mobile-icon {
+      display: block; /* Show on smaller screens */
+    }
+  }
+  .search-container {
+    text-align: center;
+    margin-top: 2rem;
+    color: rgb(243, 192, 126);
+    margin-bottom: 4rem;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+#searchInput {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#searchResults {
+    margin-top: 10px;
+}
+#orderForm {
+  text-align: center;
+  color: rgb(243, 192, 126);
+}
+#myForm  {
+  color: rgb(243, 192, 126);
+}
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 2px solid rgb(243, 192, 126);
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-color: rgb(243, 192, 126);
+}
+
+button {
+  padding: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgb(243, 192, 126);
+  border-radius: 10px;
+  border-color: rgb(243, 192, 126);
+  color: white;
+}
+.footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: rgb(243, 192, 126);
+  
+}
