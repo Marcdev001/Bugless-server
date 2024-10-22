@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background-color: rgb(224, 60, 0);
+    color: white;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  text-align: right;
+  margin-bottom: 5rem;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.navbar a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: orangered;
+}
+.navbar a.icon {
+  display: none;
+}
+.navbar a.logo {
+  float: left;
+  display: block;
+  text-align: left;
+}
+.navbar a.logo:hover {
+  background-color: black;
+  color: white;
+
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a, .navbar.responsive a.logo {
+    float: none;
+    display: block;
+    text-align: left; 
+  }
+  .navbar.navbar.responsive a:not(":first-child") {
+    display: inline-block;
+  }
+}
+
+.services {
+  flex-direction: column;
+  border: 3px solid black;
+  border-radius: 20px;
+  width: 90%;
+  margin-left: 1rem;
+  padding: 2rem;
+  background-color: black;
+  color: white;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.815);
+  overflow: hidden;
+  margin-bottom: 4rem;
+  float: left;
+
+}
+.services h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.services-conatainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.services-box i {
+  font-size: 2rem;
+  color: orangered;
+}
+
+.services-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.services-conatainer .services-box {
+  border-radius: 2rem;
+  border: 2px solid white;
+  width: 100%;
+  padding: 1rem;
+}
+.services-conatainer .services-box:hover  {
+  border-color: orangered;
+}
+@media only screen and (min-width: 250px) and (max-width: 600px){
+  .services {
+    flex-direction: column;
+  border: 3px solid black;
+  border-radius: 20px;
+  width: 93%;
+  margin-left: 10px;
+  padding: 2rem;
+  background-color: black;
+  color: white;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.815);
+  overflow: hidden;
+  margin-bottom: 4rem;
+  float: left;
+
+  }
+  .services-conatainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 834px){
+  .services {
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 90%;
+    margin-left: 10px;
+    padding: 2rem;
+    background-color: black;
+    color: white;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.815);
+    overflow: hidden;
+    margin-bottom: 4rem;
+    float: left;
+  
+  }
+  .services-conatainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}
+.button {
+  display: inline-block;
+  padding: 1rem 1rem;
+  background-color: orangered;
+  color: black;
+  text-decoration: none;
+  border-radius: 30px;
+}
+.button:hover {
+  background-color: rgb(252, 85, 24);
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 3px solid black;
+  border-radius: 20px;
+  width: 40%;
+  margin-left: 1rem;
+  padding: 2rem;
+  background-color: black;
+  color: white;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.815);
+  overflow: hidden;
+  margin-bottom: 4rem;
+
+}
+@media screen and (min-width: 710px) and (max-width: 1377px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 50%;
+    margin-left: 1rem;
+    padding: 2rem;
+    background-color: black;
+    color: white;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.815);
+    overflow: hidden;
+    margin-bottom: 4rem;
+  
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 710px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 60%;
+    margin-left: 1rem;
+    padding: 2rem;
+    background-color: black;
+    color: white;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.815);
+    overflow: hidden;
+    margin-bottom: 4rem;
+  
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 577px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 90%;
+    margin-left: 1rem;
+    padding: 2rem;
+    background-color: black;
+    color: white;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.815);
+    overflow: hidden;
+    margin-bottom: 4rem;
+  
+  }
+}
+.contact a {
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: orangered;
+}
+.contact a:hover  {
+  color: rgb(252, 85, 24);
+
+}
+.button-1 {
+  display: inline-block;
+  padding: 1rem 1rem;
+  background-color: black;
+  color: orangered;
+  text-decoration: none;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.button-1:hover {
+  background-color: rgb(34, 34, 34);
+}
